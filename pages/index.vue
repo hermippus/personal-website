@@ -1,6 +1,7 @@
 <template>
   <div>
     <div class="container mx-auto select-none">
+      <h1>Alpha version</h1>
       <div class="grid grid-cols-3 gap-8 p-6">
         <div class="border border-main rounded-xl p-6 text-transparent bg-clip-text bg-gradient-to-r from-[#FF8C42] to-[#FF3C38]
        h-24 transition-all hover:shadow-xl hover:opacity-90">
@@ -39,7 +40,8 @@
           </div>
         </div>
         <div class="border border-main rounded-xl p-6 -mt-24 transition-all hover:shadow-xl hover:opacity-90">
-          <h1 class="text-lg -mt-4 text-title">about me</h1>
+          <h1 class="text-lg -mt-4 text-title">
+            about me</h1>
           <h2 class="text-md text-orange-400">
             Hi! I'm 17 and I'm a fullstack developer & devops.
             I'm currently learning Nuxt, TailwindCSS and Spring. I'm also learning DevOps tools like Jenkins and GitHub Actions.
