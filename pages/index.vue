@@ -1,89 +1,77 @@
 <template>
-  <div>
-    <div class="container mx-auto select-none">
-      <h1>Alpha version</h1>
-      <div class="grid grid-cols-3 gap-8 p-6">
-        <div class="border border-main rounded-xl p-6 text-transparent bg-clip-text bg-gradient-to-r from-[#FF8C42] to-[#FF3C38]
-       h-24 transition-all hover:shadow-xl hover:opacity-90">
-          <h1 class="text-2xl -mt-2">@hermippus</h1>
-          <h2 class="text-xl">fullstack developer & devops</h2>
-        </div>
-        <div class="border border-main rounded-xl p-6 transition-all hover:shadow-xl hover:opacity-90">
-          <h1 class="text-lg -mt-4 text-title">languages</h1>
-          <div class="flex flex-wrap gap-4 mt-4">
-            <div class="border border-main text-orange-400 py-2 px-4 rounded-lg shadow-md">
-              Java
+  <div class="min-h-screen flex items-center justify-center bg-gray-50">
+    <div class="grid grid-cols-3 gap-6 max-w-3xl w-full justify-items-end">
+      <!-- Title & Subtitle block -->
+      <div class="border border-main row-span-1 col-span-1 p-3 rounded-xl shadow-xl shadow-cyan-100 hover:shadow-cyan-200 hover:shadow-2xl hover:opacity-90 hover:scale-[101%] smooth">
+        <h1 class="text-xl text-title">Hermippus</h1>
+        <h2 class="text-base text-title">Fullstack developer & DevOps</h2>
+      </div>
+      <!-- Skills block -->
+      <div class="border border-main row-span-2 col-span-2 p-3 rounded-xl shadow-xl shadow-cyan-100 hover:shadow-cyan-200 hover:shadow-2xl hover:opacity-90 hover:scale-[101%] smooth">
+        <h1 class="text-md lg:text-lg text-title px-1">skills</h1>
+        <div class="bg-gray-100 rounded-lg">
+          <div class="text-sm text-[#14506F] p-2 flex gap-x-1">
+            <p>Languages:</p>
+            <div class="text-[#5B89A1]">
+              <p>Java, JavaScript, TypeScript</p>
             </div>
-            <div class="border border-main text-orange-400 py-2 px-4 rounded-lg shadow-md">
-              TypeScript
+          </div>
+          <div class="text-sm text-[#14506F] p-2 flex gap-x-1">
+            <p>Tools:</p>
+            <div class="text-[#5B89A1]">
+              <p>Gradle, Maven, NeoVim, Intellij IDEA, Figma</p>
             </div>
-            <div class="border border-main text-orange-400 py-2 px-4 rounded-lg shadow-md">
-              JavaScript
+          </div>
+          <div class="text-sm text-[#14506F] p-2 flex gap-x-1">
+            <p>Frameworks:</p>
+            <div class="text-[#5B89A1]">
+              <p>Spring, NuxtJS, VueJS, TailwindCSS</p>
+            </div>
+          </div>
+          <div class="text-sm text-[#14506F] p-2 flex gap-x-1">
+            <p>DevOps:</p>
+            <div class="text-[#5B89A1]">
+              <p>Jenkins, GitHub Actions, Docker/Podman</p>
+            </div>
+          </div>
+          <div class="text-sm text-[#14506F] p-2 flex gap-x-1">
+            <p>Databases:</p>
+            <div class="text-[#5B89A1]">
+              <p>PostgreSQL, MySQL/MariaDB</p>
+            </div>
+          </div>
+          <div class="text-sm text-[#14506F] p-2 flex gap-x-1">
+            <p>GNU/Linux distros:</p>
+            <div class="text-[#5B89A1]">
+              <p>Arch Linux, Rocky Linux, Debian</p>
             </div>
           </div>
         </div>
-        <div class="border border-main rounded-xl p-6 transition-all hover:shadow-xl hover:opacity-90">
-          <h1 class="text-lg -mt-4 text-title">devops & infrastructure</h1>
-          <div class="flex flex-wrap gap-4  mt-4 items-start">
-            <div class="border border-main text-orange-400 py-2 px-4 rounded-lg shadow-md">
-              Jenkins
-            </div>
-            <div class="border border-main text-orange-400 py-2 px-4 rounded-lg shadow-md">
-              GitHub Actions
-            </div>
-            <div class="border border-main text-orange-400 py-2 px-4 rounded-lg shadow-md">
-              Docker
-            </div>
-            <div class="border border-main text-orange-400 py-2 px-4 rounded-lg shadow-md">
-              Podman
-            </div>
-          </div>
-        </div>
-        <div class="border border-main rounded-xl p-6 -mt-24 transition-all hover:shadow-xl hover:opacity-90">
-          <h1 class="text-lg -mt-4 text-title">
-            about me</h1>
-          <h2 class="text-md text-orange-400">
-            Hi! I'm 17 and I'm a fullstack developer & devops.
-            I'm currently learning Nuxt, TailwindCSS and Spring. I'm also learning DevOps tools like Jenkins and GitHub Actions.
-          </h2>
-          <h1 class="text-lg text-title">contacts</h1>
-          <h2 class="text-md text-orange-400">
-            GitHub: <a class="text-orange-500 hover:text-orange-600" href="https://github.com/hermippus">Click</a>
-          </h2>
-          <h2 class="text-md text-orange-400">
-            Matrix: <a class="text-orange-500 hover:text-orange-600" href="https://duckduckgo.com">Soon</a>
-          </h2>
-        </div>
-        <div class="border border-main rounded-xl p-6 -mt-4 transition-all hover:shadow-xl hover:opacity-90">
-          <h1 class="text-lg -mt-4 text-title">frameworks</h1>
-          <div class="flex flex-wrap gap-4 mt-4 items-start">
-            <div class="border border-main text-orange-400 py-2 px-4 rounded-lg shadow-md">
-              NuxtJS
-            </div>
-            <div class="border border-main text-orange-400 py-2 px-4 rounded-lg shadow-md">
-              VueJS
-            </div>
-            <div class="border border-main text-orange-400 py-2 px-4 rounded-lg shadow-md">
-              TailwindCSS
-            </div>
-            <div class="border border-main text-orange-400 py-2 px-4 rounded-lg shadow-md">
-              Spring
-            </div>
-          </div>
-        </div>
+      </div>
+      <!-- About & Contacts block -->
+      <div class="border border-main row-span-1 col-span-1 p-3 rounded-xl shadow-xl shadow-cyan-100  hover:shadow-cyan-200 hover:shadow-2xl hover:opacity-90 hover:scale-[101%] smooth">
+        <h1 class="text-md lg:text-lg text-title">about me</h1>
+        <p class="text-subtitle text-[13px] lg:text-sm">Hi! I'm 17 and I like computer science. Currently I'm learning backend, frontend dev and devops</p>
+        <h1 class="text-md lg:text-lg  text-title">contacts</h1>
+        <p class="text-subtitle text-[13px] lg:text-sm">E-mail: hermippus@proton.me</p>
       </div>
     </div>
   </div>
 </template>
 
 <style scoped>
+.smooth {
+  transition: all .8s cubic-bezier(.215,.61,.355,1);
+}
 .text-title {
-  color: #c9ac86;
+  color: #67C1C0;
 }
+
+.text-subtitle {
+  color: #617170
+}
+
 .border-main {
-  border-color: #A0A0A0;
-}
-div {
-  font-family: Outfit,serif;
+  border-color: #939393;
 }
 </style>
