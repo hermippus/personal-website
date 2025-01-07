@@ -1,6 +1,6 @@
-# Personal Website (version: alpha)
+# Personal Website (version: beta)
 ### Tech stack:
 * Nuxt JS
 * Tailwind CSS
 
-My personal website.
+My simple personal website.
