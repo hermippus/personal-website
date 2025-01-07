@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   modules: ['@nuxtjs/tailwindcss', '@nuxt/fonts'],
   app: {
     head: {
-      title: 'Hermippus',
+      title: 'Hermippus | Personal website',
       link: [
         { rel: 'icon', href: '/favicon.ico'}
       ]
