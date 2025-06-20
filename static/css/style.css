@@ -1,0 +1,66 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh
+}
+
+.logo {
+  display: block;
+  text-align: center;
+  width: 300px;
+  margin: 0 auto 
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 3rem
+}
+
+.title {
+  border-radius: 10px;
+  border-style: solid;
+  width: 100%;
+  padding: 9px
+}
+
+
+.desc {
+  margin-top: -15px;
+  word-wrap: break-word
+}
+
+a {
+  text-decoration: none;
+  color: #55A6A1;
+}
+
+a:hover {
+  color: #4A948F 
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .grid {
+    gap: 2rem;
+    padding: 0 10px
+  }
+
+  .title {
+    border-width: 2px;
+    font-size: 14px;
+    padding: 2px
+  }
+
+  .desc {
+    font-size: 15px;
+    margin-top: -25px;
+    padding: 5px
+  }
+
+  h3 {
+    font-size: 18px;
+    padding: 5px
+  }
+}
