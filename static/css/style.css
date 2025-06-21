@@ -1,3 +1,7 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -20,7 +24,7 @@
 }
 
 .title {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
   border-radius: 10px;
   border-style: solid;
   width: 100%;
