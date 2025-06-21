@@ -23,7 +23,7 @@ body {
   gap: 3rem
 }
 
-.title {
+.item {
   transition: transform 0.5s ease, box-shadow 0.5s ease;
   border-radius: 10px;
   border-style: solid;
@@ -31,7 +31,7 @@ body {
   padding: 9px
 }
 
-.title:hover {
+.item:hover {
   transform: scale(1.05);
   box-shadow: 0 10px 20px #4A948F;
 }
