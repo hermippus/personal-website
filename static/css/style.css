@@ -45,7 +45,7 @@ body {
 }
 
 .desc {
-  margin-top: -15px;
+  margin-top: -10px;
   word-wrap: break-word
 }
 
@@ -54,12 +54,21 @@ a {
   color: #45928D
 }
 
+p {
+  margin: 10px 0
+}
+
+
 a:hover {
   color: #3C8983 
 }
 
 /* Mobile */
 @media (max-width: 600px) {
+  .container {
+    margin-top: 70px;
+  }
+
   .grid {
     gap: 2rem;
     padding: 0 10px
@@ -73,7 +82,6 @@ a:hover {
 
   .desc {
     font-size: 18px;
-    margin-top: -25px;
     padding: 5px
   }
 
