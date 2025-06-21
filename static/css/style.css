@@ -1,5 +1,7 @@
 body {
   font-family: "Roboto", sans-serif;
+  color: black;
+  background-color: #DDDD
 }
 
 .container {
@@ -13,8 +15,11 @@ body {
   display: block;
   text-align: center;
   width: 300px;
-  margin: 0 auto 
+  margin: 0 auto;
+  font-size: 2.5rem;
+  color: #58A291;
 }
+
 
 .grid {
   margin-top: 100px;
@@ -25,15 +30,18 @@ body {
 
 .item {
   transition: transform 0.5s ease, box-shadow 0.5s ease;
-  border-radius: 10px;
-  border-style: solid;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1.5px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
   width: 100%;
-  padding: 9px
+  padding: 16px
 }
 
 .item:hover {
   transform: scale(1.05);
-  box-shadow: 0 10px 20px #4A948F;
+  box-shadow: 0 8px 20px rgba(85, 166, 161, 0.7);
+  border-color: rgba(85, 166, 161, 0.8)
 }
 
 .desc {
@@ -43,11 +51,11 @@ body {
 
 a {
   text-decoration: none;
-  color: #55A6A1;
+  color: #45928D
 }
 
 a:hover {
-  color: #4A948F 
+  color: #3C8983 
 }
 
 /* Mobile */
@@ -57,20 +65,20 @@ a:hover {
     padding: 0 10px
   }
 
-  .title {
+  .item {
     border-width: 2px;
     font-size: 14px;
     padding: 2px
   }
 
   .desc {
-    font-size: 15px;
+    font-size: 18px;
     margin-top: -25px;
     padding: 5px
   }
 
   h3 {
-    font-size: 18px;
+    font-size: 20px;
     padding: 5px
   }
 }
