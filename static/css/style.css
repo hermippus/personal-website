@@ -20,12 +20,17 @@
 }
 
 .title {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 10px;
   border-style: solid;
   width: 100%;
   padding: 9px
 }
 
+.title:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px #4A948F;
+}
 
 .desc {
   margin-top: -15px;
