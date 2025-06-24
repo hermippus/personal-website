@@ -17,7 +17,7 @@ body {
   width: 300px;
   margin: 0 auto;
   font-size: 2.5rem;
-  color: #58A291;
+  color: #58A291
 }
 
 
@@ -66,7 +66,7 @@ a:hover {
 /* Mobile */
 @media (max-width: 600px) {
   .container {
-    margin-top: 70px;
+    margin-top: 70px
   }
 
   .grid {
