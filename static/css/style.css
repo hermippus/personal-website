@@ -8,24 +8,55 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70vh
+  height: 70vh;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .logo {
+  animation: breathe 2s ease-in-out infinite;
+  transform-origin: center;
+  transition: transform ease 0.5s;
   display: block;
   text-align: center;
-  width: 300px;
   margin: 0 auto;
-  font-size: 2.5rem;
+  font-size: 3rem;
+  text-shadow: 0 3px 12px rgba(88, 162, 145, 0.5);
   color: #58A291
 }
 
+.footer-text {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 1rem;
+  color: #666;
+}
+
+@keyframes breathe {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.02); }
+  100% { transform: scale(1); }
+}
+
+
+.logo:hover {
+  transform: scale(1.05)
+}
+
+.noselect {
+  -webkit-user-select: none; 
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none
+}
 
 .grid {
-  margin-top: 100px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 3rem
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 3.5rem
 }
 
 .item {
@@ -46,7 +77,6 @@ body {
 
 .desc {
   margin-top: -10px;
-  word-wrap: break-word
 }
 
 a {
@@ -66,7 +96,15 @@ a:hover {
 /* Mobile */
 @media (max-width: 600px) {
   .container {
-    margin-top: 70px
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .footer-text {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+    width: 90%;
   }
 
   .grid {
