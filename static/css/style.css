@@ -14,7 +14,7 @@ body {
 }
 
 .logo {
-  animation: breathe 2s ease-in-out infinite;
+  animation: breathe 2s ease-in-out infinite, color-pulse 2s ease-in-out infinite;
   transform-origin: center;
   transition: transform ease 0.5s;
   display: block;
@@ -33,6 +33,15 @@ body {
   text-align: center;
   font-size: 1rem;
   color: #666;
+}
+
+
+@keyframes color-pulse {
+  0%   { color: #58A291; }
+  25%  { color: #5FB9A1; }
+  50%  { color: #4CA28D; }  
+  75%  { color: #66BCA4; }
+  100% { color: #58A291; } 
 }
 
 @keyframes breathe {
