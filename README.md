@@ -1,2 +1,2 @@
 # personal-website
-A simple personal website with basic HTML and CSS
+A simple personal website using only HTML and CSS
